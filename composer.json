@@ -1,5 +1,6 @@
 {
   "name": "vbridgecloud/concis-framework",
+  "type": "library",
   "description": "Concis 🤏 – Google Cloud PHP Functions Framework",
   "license": "MIT",
   "autoload": {
