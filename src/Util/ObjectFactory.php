@@ -37,7 +37,7 @@ class ObjectFactory
 		$errors = [];
 		if (\method_exists($instance, 'getValidations')) {
 			foreach ($instance::getValidations() as $field => $validation) {
-				if (!isset($instance->$field)) {
+				if ($validation && !isset($instance->$field)) {
 					$errors[] = 'Missing field ' . $field;
 				}
 			}
